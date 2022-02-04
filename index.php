@@ -29,6 +29,7 @@
  				<h1> Student list </h1>
 
  				<a href="insert.php" class="btn btn-primary"> Add Student </a>
+ 				
  				<br><br>
  				<table class="table table-bordered table-sm">
  					<thead>
@@ -50,6 +51,10 @@
  								<td><?php echo $row['Roll']; ?></td>
  								<td><?php echo $row['Reg']; ?></td>
  								<td><?php echo $row['Age']; ?></td>
+								 <td>
+								
+								 <a href="delete.php?id=<?php echo $row['Id'] ?>" class="btn btn-danger"> Delete </a>
+								 </td>
  							</tr>
  						<?php } ?>
 
